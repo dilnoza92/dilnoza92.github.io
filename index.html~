@@ -28,11 +28,11 @@
 	    <div class="slides">
 
 
-	      <section class="center" data-background="#ffffff">
-		<h1 class="attn">Welcome to Website!</h1>
+	      <section class="center" data-background="#ffdd00">
+		<h4 class="attn">Welcome to Website!</h4>
 
 	  
-		<p>Dilnoza Amirkulova</p>
+		<p><i><small>Dilnoza Amirkulova</small></i></p>
 		<p>
 		  <small> Chemical Engineering<br/>
 		  </small>
@@ -42,6 +42,9 @@
 
 
 
+
+	      <section data-background="#ffdd00">
+	      </section>
 
 	      
 	    </div>
