@@ -43,15 +43,75 @@ body {
 
 body {
   position: relative;
-  line-height: 1;
-  background-color: #fff;
-  color: #000; }
+  line-height: 1.5;
+  background-color: #ece2f0;
+  color: #016c59; }
 
 html:-webkit-full-screen-ancestor {
   background-color: inherit; }
 
 html:-moz-full-screen-ancestor {
   background-color: inherit; }
+.wrapper {background-image: url("images/dilnoza.png");
+	 background-color: #ece2f0;	
+	 box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+		     	    }
+#navbar {
+     background-color:#1c9099;
+     text-align: center;
+     position: fixed;
+     left:0;
+     top: 0;
+     
+     width: 100%;
+     z-index: 10000;
+     cursor: default;
+     color:#f6eff7;
+     font-size: 2.0em !important;
+     }
+     #navbar ul {
+     margin-bottom: 0;								
+     }
+     #navbar li {
+     display: inline-block;
+     }
+     #navbar a {
+     height: 10px;
+     position: relative;
+     display: block;
+     color: #f6eff7;
+     text-decoration: None
+     outline: 0;
+     }
+#navbar a:hover {
+
+     color: #a6bddb !important;
+     font-size: 2.0em important;
+     }
+#navbar a.active:before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -0.6em;
+	left: 50%;
+	margin-left: -0.75em;
+	border-left: solid 0.75em transparent;
+	border-right: solid 0.75em transparent;
+	border-top: solid 0.6em #282828;
+	}
+
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /*********************************************
  * VIEW FRAGMENTS
@@ -299,7 +359,7 @@ html:-moz-full-screen-ancestor {
   right: 8px;
   bottom: 8px;
   z-index: 31;
-  font-family: Helvetica, sans-serif;
+  font-family:georgia,garamond,serif;
   font-size: 12px;
   line-height: 1;
   color: #fff;
@@ -324,16 +384,16 @@ html:-moz-full-screen-ancestor {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 10;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
   overflow: visible;
   z-index: 1;
-  text-align: center;
-  -webkit-perspective: 600px;
-          perspective: 600px;
+  text-align: justify;
+  -webkit-perspective: 900px;
+          perspective: 900px;
   -webkit-perspective-origin: 50% 40%;
           perspective-origin: 50% 40%; }
 
@@ -826,7 +886,7 @@ html:-moz-full-screen-ancestor {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  background-color: transparent;
+  background-color: #ece2f0;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1041,13 +1101,13 @@ html:-moz-full-screen-ancestor {
  *********************************************/
 .reveal.rtl .slides,
 .reveal.rtl .slides h1,
-.reveal.rtl .slides h2,
+.reveal.rtl .slides h2 {text-decoration: underline overline dotted red},
 .reveal.rtl .slides h3,
 .reveal.rtl .slides h4,
 .reveal.rtl .slides h5,
 .reveal.rtl .slides h6 {
   direction: rtl;
-  font-family: sans-serif; }
+  font-family:georgia,garamond,serif; }
 
 .reveal.rtl pre,
 .reveal.rtl code {
@@ -1296,7 +1356,7 @@ html:-moz-full-screen-ancestor {
   overflow: auto;
   box-sizing: border-box;
   text-align: left;
-  font-family: Helvetica, sans-serif;
+  font-family:georgia,garamond,serif;
   -webkit-overflow-scrolling: touch; }
 
 .reveal .speaker-notes.visible:not(:empty) {
