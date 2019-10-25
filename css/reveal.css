@@ -52,7 +52,7 @@ html:-webkit-full-screen-ancestor {
 
 html:-moz-full-screen-ancestor {
   background-color: inherit; }
-.wrapper {background-image: url("images/dilnoza.png");
+.wrapper {background-image: url("img/amyloid.png");
 	 background-color: #ece2f0;	
 	 box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		     	    }
@@ -60,44 +60,95 @@ html:-moz-full-screen-ancestor {
      background-color:#1c9099;
      text-align: center;
      position: fixed;
-     left:0;
-     top: 0;
-     
+     left:0.1;
+     top: 0.1;
+
      width: 100%;
      z-index: 10000;
      cursor: default;
      color:#f6eff7;
-     font-size: 2.0em !important;
+     font-size: 1.5em !important;
      }
      #navbar ul {
-     margin-bottom: 0;								
+     margin-bottom: 0.0;								
+          margin-top: 0.0;										
      }
      #navbar li {
      display: inline-block;
      }
      #navbar a {
-     height: 10px;
+     height: 2px;
      position: relative;
      display: block;
      color: #f6eff7;
-     text-decoration: None
+     text-decoration: italisize;
      outline: 0;
      }
 #navbar a:hover {
 
      color: #a6bddb !important;
-     font-size: 2.0em important;
+     font-size: 1.5em !important;
+     
      }
 #navbar a.active:before {
 	content: '';
 	display: block;
+
 	position: absolute;
-	bottom: -0.6em;
+	bottom:2.0em;
 	left: 50%;
 	margin-left: -0.75em;
 	border-left: solid 0.75em transparent;
 	border-right: solid 0.75em transparent;
 	border-top: solid 0.6em #282828;
+	}
+
+
+#navbar2 {
+     background-color:#1c9099;
+     text-align: center;
+     position: relative;
+     left:3%;
+
+     -webkit-transition: opacity 0.25s;
+     transition: opacity 0.25s;
+     width: 90%;
+     z-index: 10000;
+     cursor: default;
+     color:#f6eff7;
+     font-size: 1.4em !important;
+     }
+     #navbar2 ul {
+     margin-bottom: 0;								
+     margin-top: 0;										
+     }
+     #navbar2 li {
+     display: inline-block;
+     }
+     #navbar2 a {
+     height: 4px;
+     position: relative;
+     display: block;
+     color: #f6eff7;
+     top:50%;
+     text-decoration: italisize;
+     outline: 0;
+     }
+#navbar2 a:hover {
+     color: #a6bddb !important;
+     font-size: 1.1em !important;
+     opacity:0.9 !important;
+     }
+#navbar2 a.active:before {
+	content: '';
+	display: block;
+	position:relative;
+	bottom:10%;
+	right: 60%;
+	margin-right:solid 0.75em;
+	border-left: solid 0.75em transparent;
+	border-right: solid 0.75em transparent;
+	border-top: solid 0.3em #282828;
 	}
 
 
